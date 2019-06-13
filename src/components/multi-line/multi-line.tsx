@@ -23,7 +23,7 @@ export class MyComponent {
   @Prop() last: string;
 
   private getText(): string {
-    return format(this.first, this.middle, this.last);
+    return format(this.first, this.last);
   }
 
   render() {
