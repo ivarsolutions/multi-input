@@ -1,5 +1,5 @@
 {
-  "name": "stencil-starter-project-name",
+  "name": "multi-select",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.js",
+  "unpkg": "dist/multi-select/multi-select.js",
   "files": [
     "dist/",
     "loader/"
@@ -23,5 +23,5 @@
   "devDependencies": {
     "@stencil/core": "1.0.0-beta.8"
   },
-  "license": "MIT"
+  "license": ""
 }

@@ -9,53 +9,31 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
+  interface MultiSelect {
+    'id': string;
   }
 }
 
 declare global {
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLMultiSelectElement extends Components.MultiSelect, HTMLStencilElement {}
+  var HTMLMultiSelectElement: {
+    prototype: HTMLMultiSelectElement;
+    new (): HTMLMultiSelectElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'multi-select': HTMLMultiSelectElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
+  interface MultiSelect extends JSXBase.HTMLAttributes<HTMLMultiSelectElement> {
+    'id'?: string;
   }
 
   interface IntrinsicElements {
-    'my-component': MyComponent;
+    'multi-select': MultiSelect;
   }
 }
 
